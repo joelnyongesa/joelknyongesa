@@ -1,0 +1,191 @@
+@import "https://fonts.googleapis.com/css?family=Nunito";
+
+*{
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    color: #2c405e;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    margin: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: "";
+    background-color: #2c405e;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after{
+    transform: translateY(-15px);
+    opacity: 1;
+}
+
+nav p {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.burger{
+    border: 0;
+    background-color: transparent;
+    color: inherit;
+    font-size: 20px;
+    /* display: none; */
+}
+
+.profile{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile > img {
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+    border: 3px black solid;
+    margin: 1rem;
+}
+
+.profile .bio {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.profile .bio >h2 {
+    margin: 0;
+}
+
+.profile .bio .bio-headline{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.socials > a{
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.my-experience{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 0.5px solid transparent;
+    padding: 1rem;
+    margin-right: 5rem;
+    /* border-radius: 0.5rem; */
+    box-shadow: 10px 10px 5px #9E9E9E;
+}
+
+.experience:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+
+.experience-subset{
+    display: flex;
+    margin: 0px;
+}
+
+.experience-subset > i{
+    margin:auto 5px auto 0px;
+}
+
+.tech-stack{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.technologies{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.technologies > img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.education{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.education-entry{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 2rem;
+}
+
+.education-entry .course{
+    font-weight: bold;
+}
+
+.education-entry .school{
+    font-style: italic;
+}
