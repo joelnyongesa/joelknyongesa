@@ -12,13 +12,13 @@
         <p>Joel Nyongesa</p>
         <div style="display: flex;">
             <ul>
-                <li><a id="" href="#">Home</a></li>
-                <li><a id="" href="#">Experience</a></li>
-                <li><a id="" href="#">Projects</a></li>
-                <li><a id="" href="#">Blog</a></li>
-                <li><a id="" href="#">Tech Stack</a></li>
-                <li><a id="" href="#">Education</a></li>
-                <li><a id="" href="#">Communities</a></li>
+                <li><a id="" href="#profile">Home</a></li>
+                <li><a id="" href="#my-experience">Experience</a></li>
+                <!-- <li><a id="" href="#">Projects</a></li> -->
+                <!-- <li><a id="" href="#">Blog</a></li> -->
+                <li><a id="" href="#tech-stack">Tech Stack</a></li>
+                <li><a id="" href="#education">Education</a></li>
+                <!-- <li><a id="" href="#">Communities</a></li> -->
             </ul>
             <button class="burger" id="burger">
                 &#9776
@@ -27,13 +27,13 @@
     </nav>
 
     <!-- My Profile -->
-     <div class="profile">
-        <img src="assets/profile_portrait.jpg" alt="A portrait photo of Joel Nyongesa"/>
+     <div class="profile" id="profile">
+        <img src="assets/profile_portrait.jpg" alt="A portrait photo of Joel Nyongesa" draggable="false"/>
         <div class="bio">
             <h2>About Me</h2>
             <p class="bio-headline">Full Stack Software Engineer | Technical Writer</p>
             <p>
-                I am a full-stack software engineer with 1 year of experience, dedicated to mastering the best practices for building scalable and maintainable software that meets user needs. I also write technical articles for developers, and love giving talks on building optimal software and technical writing.
+                I am a full-stack software engineer with 1 year of experience in diverse fields, including fundraising, technical writing, project management, and sales. I am dedicated to mastering the best practices for building scalable and maintainable software that meets user needs. I also write technical articles for developers, and love giving talks on building optimal software and technical writing.
             </p>
             
             <div class="socials">
@@ -53,11 +53,31 @@
                     <i class="fa fa-envelope"></i>
                 </a>
             </div>
+
+            <div class="time-with-me">
+                <!-- Google Calendar Appointment Scheduling begin -->
+                <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                <script>
+                (function() {
+                var target = document.currentScript;
+                window.addEventListener('load', function() {
+                    calendar.schedulingButton.load({
+                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ22Gj7q2hSncp2vdIQN5fIsYzTwOB0dj5QaJfL6E2x7y88tntg7G9_gNNddsCrIRgYTGma98G1l?gv=true',
+                    color: '#2c405e',
+                    label: 'Book Time With Me',
+                    target,
+                    });
+                });
+                })();
+                </script>
+                <!-- end Google Calendar Appointment Scheduling -->
+            </div>
         </div>
      </div>
 
      <!-- Experience -->
-      <div class="my-experience">
+      <div class="my-experience" id="my-experience">
         <h2>Experience</h2>
         <div class="experience-container">
             <div class="experience">
@@ -107,7 +127,7 @@
       </div>
 
       <!-- Tech Stack -->
-       <div class="tech-stack">
+       <div class="tech-stack" id="tech-stack">
         <h2>Tech Stack</h2>
         <div class="technologies">
             <img src="assets/tech-stack/HTML5_Logo.svg" alt="HTML5 Official Logo">
@@ -121,7 +141,7 @@
        </div>
 
     <!-- Education -->
-     <div class="education">
+     <div class="education" id="education">
         <h2>Education</h2>
         <div class="education-entry">
             <span class="course">
@@ -152,6 +172,14 @@
         </div>
      </div>
       
+     <!-- Footer -->
+      <div class="footer">
+        &copy;
+        <span id="copyright">
+            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        </span>
+        Joel Nyongesa
+      </div>
       
 </body>
 </html>
